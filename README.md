@@ -12,7 +12,7 @@ You're going to be building out a Gif search using the Giphy API. The URL for th
 
 #### `<App/>`
   Your top level component will be the `<App />` component-- no surprises there! It will be responsible for rendering the `<NavBar />` component (this component is already provided for you, note the project has bootstrap loaded in) and the `<GifListContainer />` component
-  
+
 #### `<GifListContainer />`
 
 > A container does data fetching and then renders its corresponding sub-component. That’s it.
@@ -26,13 +26,13 @@ It will also render a `<GifSearch />` component that renders the form. `<GifList
 
 #### `<GifList />`
 
-`<GifList />` is a *presentational* component. It receives data from it's props and renders html given the input data. It can render a top level `<ul>` with each gif as an `<li>`. 
+`<GifList />` is a *presentational* component. It receives data from it's props and renders html given the input data. It can render a top level `<ul>` with each gif as an `<li>`.
 
 #### `<GifSearch />`
 
-The `<GifSearch />` component will render a form that receives the user input for the giphy search. The text input should be a *controlled component* that stores the value of the input in it's component state and renders the DOM accordingly. The React component is always in charge of what the DOM looks like.
+The `<GifSearch />` component will render a form that receives the user input for the giphy search. The text input should be a *controlled component* that stores the value of the input in its component state and renders the DOM accordingly. The React component is always in charge of what the DOM looks like.
 
-`<GifSearch />` should receive a callback prop from it's parent.  On a submit event, it should invoke that callback prop with the value of the text input. It is this callback function, defined in  `<GifListContainer />`, that will actually query the api with the text the user has entered.
+`<GifSearch />` should receive a callback prop from its parent.  On a submit event, it should invoke that callback prop with the value of the text input. It is this callback function, defined in  `<GifListContainer />`, that will actually query the api with the text the user has entered.
 
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
